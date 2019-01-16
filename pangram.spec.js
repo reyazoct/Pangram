@@ -32,4 +32,8 @@ describe('Pangram', () => {
     test('Pangram with mixed case and punctuation', () => {
         expect(isPangram('"Five quacking Zephyrs jolt my wax bed."')).toBe(true);
     });
+
+    test('Upper and Lower case versions of the same character', () => {
+        expect(isPangram('the quick brown fox jumps over with lazy FX')).toBe(false);
+    });
 });
