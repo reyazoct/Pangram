@@ -16,4 +16,8 @@ describe('Pangram', () => {
     test("Lowercase Pangram with whitespaces and a missing character 'x'", () => {
         expect(isPangram('a quick movement of the enemy will jeopardize five gunboats')).toBe(false);
     });
+
+    test("Lowercase Pangram with whitespaces and a missing character 'h'", () => {
+        expect(isPangram('five boxing wizards jump quickly at it')).toBe(false);
+    });
 });
