@@ -24,4 +24,8 @@ describe('Pangram', () => {
     test('Lowercase Pangram with underscores', () => {
         expect(isPangram('the_quick_brown_fox_jumps_over_the_lazy_dog')).toBe(true);
     });
+
+    test('Pangram with numbers', () => {
+        expect(isPangram('7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog')).toBe(false);
+    });
 });
